@@ -1,0 +1,118 @@
+backend:
+  # name: git-gateway
+  name: test-repo
+  branch: master
+  commit_messages:
+  create: Create {{collection}} “{{slug}}”
+  update: Update {{collection}} “{{slug}}”
+  delete: Delete {{collection}} “{{slug}}”
+  uploadMedia: Upload “{{path}}”
+  deleteMedia: Delete “{{path}}”
+  openAuthoring: "{{message}}"
+media_folder: pubic/imgs
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home.md"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "hidden"
+                default: "Hero"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Mute Backgroundback"
+                name: "backgroundMuted"
+                widget: "boolean"
+              - label: "SubTitle"
+                name: "subTitle"
+                widget: "string"
+          - label: "Cards"
+            name: "cards"
+            widget: "object"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "hidden"
+                default: "Cards"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Mute Backgroundback"
+                name: "backgroundMuted"
+                widget: "boolean"
+              - label: "SubTitle"
+                name: "subTitle"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                min: 3
+                max: 3
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "SubTitle"
+                    name: "subTitle"
+                    widget: "string"
+          - label: "Features"
+            name: "features"
+            widget: "object"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "hidden"
+                default: "Features"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                min: 2
+                max: 4
+                fields:
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "SubTitle"
+                    name: "subTitle"
+                    widget: "string"
+                  - label: "Mute Backgroundback"
+                    name: "backgroundMuted"
+                    widget: "boolean"
+
+      - label: "About"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Blog"
+    name: "blog"
+    folder: "content/blogPosts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: true,
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+          required: true,
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
