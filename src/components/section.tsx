@@ -1,17 +1,17 @@
-import classNames from "classnames"
-
 interface SectionProps extends React.HTMLAttributes<HTMLElement> {
-  backgroundColor?: string
-  children?: React.ReactNode
+  backgroundMuted?: boolean;
+  children?: React.ReactNode;
 }
 
-export function Section({ backgroundColor, children, ...props }: SectionProps) {
+export function Section({ backgroundMuted, children, ...props }: SectionProps) {
   return (
     <section
-      className={classNames("py-8 md:py-12 lg:py-20", backgroundColor)}
+      className={`py-8 md:py-12 lg:py-20 ${
+        backgroundMuted ? "bg-gray-100" : ""
+      }`.trim()}
       {...props}
     >
       {children}
     </section>
-  )
+  );
 }

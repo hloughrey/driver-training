@@ -1,10 +1,21 @@
 import type { NextConfig } from "next";
+import "dotenv/config";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  // output: "export",
   distDir: "dist",
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./src/lib/utils/cloudinary-loader.ts",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/latitude55/image/upload/driver-training",
+        search: "",
+      },
+    ],
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,

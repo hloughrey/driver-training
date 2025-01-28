@@ -1,12 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
-// import { DrupalMenuLinkContent } from "next-drupal";
 import classNames from "classnames";
+import Image from "next/image";
 
 import Link from "next/link";
 
 interface NavbarProps {
-  // links: DrupalMenuLinkContent[];
   links: any[];
 }
 
@@ -19,9 +18,21 @@ export function Navbar({ links, ...props }: NavbarProps) {
       {...props}
     >
       <div className="container flex flex-col items-start justify-between px-6 mx-auto md:flex-row md:items-center">
-        <Link href="/" locale={locale} className="text-lg font-bold" passHref>
-          Driver Training
+        <Link
+          href="/"
+          locale={locale}
+          className="text-lg font-bold mx-auto md:mx-0"
+          passHref
+        >
+          <Image
+            src="Logo.svg"
+            alt="C1 Driver Training logo"
+            width={200}
+            height={24}
+            priority
+          />
         </Link>
+
         {links ? <Menu items={links} /> : null}
       </div>
     </header>

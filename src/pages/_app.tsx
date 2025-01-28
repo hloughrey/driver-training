@@ -1,4 +1,9 @@
-import * as React from "react";
+// import * as React from "react";
+import { Layout } from "../components/layout";
+// import BasicMeta from "../components/meta/BasicMeta";
+// import OpenGraphMeta from "../components/meta/OpenGraphMeta";
+// import TwitterCardMeta from "../components/meta/TwitterCardMeta";
+// import { SocialList } from "../components/SocialList";
 // import Router from "next/router";
 // import {
 //   QueryClient,
@@ -27,8 +32,13 @@ export default function App({ Component, pageProps }) {
   // }
   return (
     // <QueryClientProvider client={queryClientRef.current}>
-    //   <Hydrate state={pageProps.dehydratedState}>
-    <Component {...pageProps} />
+    //   <Hydrate state={pageProps.dehydratedState}>#
+    <Layout>
+      {/* <BasicMeta url={"/"} />
+      <OpenGraphMeta url={"/"} />
+      <TwitterCardMeta url={"/"} />  */}
+      <Component {...pageProps} />
+    </Layout>
     //   </Hydrate>
     // </QueryClientProvider>
   );

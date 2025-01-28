@@ -1,6 +1,5 @@
 import { JSX } from "react";
 import { LinksProps, Links } from "./links";
-import { FormattedText } from "./formatted-text";
 
 interface SectionHeaderProps {
   level?: number;
@@ -12,7 +11,6 @@ interface SectionHeaderProps {
 export function SectionHeader({
   level = 2,
   heading,
-  text,
   links,
   ...props
 }: SectionHeaderProps) {
@@ -23,12 +21,6 @@ export function SectionHeader({
         <HeadingLevel className="text-3xl font-black sm:text-4xl md:text-5xl lg:text-6xl">
           {heading}
         </HeadingLevel>
-      )}
-      {text && (
-        <FormattedText
-          className="max-w-xl mx-auto mt-2 text-lg font-light leading-tight text-gray-500 sm:text-xl md:text-2xl"
-          processed={text}
-        />
       )}
       {links?.length ? <Links links={links} /> : null}
     </div>

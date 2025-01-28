@@ -4,10 +4,6 @@ import { Navbar } from "./navbar";
 import { Footer } from "./footer";
 
 export interface LayoutProps {
-  // menus: {
-  // main: DrupalMenuLinkContent[]
-  // footer: DrupalMenuLinkContent[]
-  // }
   children?: React.ReactNode;
 }
 
@@ -15,6 +11,8 @@ const menus = {
   main: [
     { id: "home", url: "/", title: "Home" },
     { id: "about", url: "/about", title: "About" },
+    { id: "instructors", url: "/instructors", title: "Instructors" },
+    { id: "faqs", url: "/faqs", title: "FAQs" },
     { id: "contact", url: "/contact", title: "Contact Us" },
   ],
   footer: [],
