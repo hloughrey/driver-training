@@ -119,11 +119,7 @@ export function ContactForm({ title, subTitle }) {
 
   return (
     <Section>
-      <SectionHeader
-        heading={title}
-        text={subTitle}
-        // links={links}
-      />
+      <SectionHeader heading={title} text={subTitle} />
       <div className="container px-6 mx-auto md:w-3/5 xl:w-2/5">
         <form className="pt-20" method="post" onSubmit={handleSubmit}>
           <div className="grid gap-6">

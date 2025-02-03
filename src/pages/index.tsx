@@ -7,6 +7,10 @@ import { Meta } from "../components/meta";
 type HomePageProps = {
   props: {
     attributes: any;
+    contactDetails: {
+      telephone: number;
+      email: string;
+    };
     html?: any;
   };
 };
@@ -16,14 +20,21 @@ export async function getStaticProps(): Promise<HomePageProps> {
     default: { attributes, html },
   }: any = await import("@content/pages/home.md");
 
-  return { props: { attributes, html } };
+  const {
+    default: { attributes: contactDetails },
+  }: any = await import("@content/settings/contact.md");
+
+  return { props: { attributes, contactDetails, html } };
 }
 
-export default function index({ attributes }) {
+export default function index({ attributes, contactDetails }) {
   return (
     <>
       <Meta title={attributes.pageMeta.title} />
-      <SectionHero {...attributes.hero} />
+      <SectionHero
+        {...attributes.hero}
+        phoneNumber={contactDetails.phoneNumber}
+      />
       <SectionCards {...attributes.cards} />
       {attributes.features.items.map((item, idx) => (
         <SectionFeature

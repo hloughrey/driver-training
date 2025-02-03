@@ -23,7 +23,6 @@ export function Layout({ children }: LayoutProps) {
     <div className="flex flex-col min-h-screen">
       <Navbar links={menus.main} />
       <main className="flex-1">{children}</main>
-      {/* <Footer links={menus.footer} /> */}
       <Footer />
     </div>
   );

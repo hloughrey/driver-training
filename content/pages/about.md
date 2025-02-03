@@ -8,7 +8,7 @@ hero:
     alt: Picture of a road
     image: driver-training.jpg
 content: >-
-  C1 DRIVER TRAINING NORTH WEST is a C1 training provider that specialises in
+  C1 Driver Training North West is a C1 training provider that specialises in
   giving you the skills, knowledge and experience to successfully acquire your
   C1 category on your driving licence in the North West of England.
 

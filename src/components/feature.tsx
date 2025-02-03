@@ -1,8 +1,6 @@
 import Image from "next/image";
 import classNames from "classnames";
 
-// import { absoluteURL } from "lib/utils/absolute-url";
-// import { Links } from "./links";
 import { Section } from "./section";
 
 type FeatureProps = {
@@ -53,7 +51,6 @@ export function SectionFeature({
                 {subTitle}
               </p>
             )}
-            {/* {link && <Links links={[link]} />} */}
           </div>
         </div>
       </div>

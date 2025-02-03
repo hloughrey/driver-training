@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// import { CldImage } from "next-cloudinary";
 
 type HeroProps = {
   title: string;
@@ -9,9 +8,15 @@ type HeroProps = {
     alt: string;
     image: string;
   };
+  phoneNumber: number;
 };
 
-export function SectionHero({ title, subTitle, media }: HeroProps) {
+export function SectionHero({
+  title,
+  subTitle,
+  media,
+  phoneNumber,
+}: HeroProps) {
   return (
     <section className="flex w-full h-96 lg:h-[70vh]">
       <div className="relative object-cover w-full">
@@ -34,7 +39,7 @@ export function SectionHero({ title, subTitle, media }: HeroProps) {
           </p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <Link
-              href="tel:07843 847524"
+              href={`tel:${phoneNumber}`}
               className="md:w-[12rem] inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 dark:focus:ring-rose-900"
             >
               <svg
@@ -56,6 +61,7 @@ export function SectionHero({ title, subTitle, media }: HeroProps) {
             </Link>
             <Link
               href="/faqs"
+              aria-label="Link to our Frequently Asked Questions page"
               className="md:w-[12rem] inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
             >
               Learn more

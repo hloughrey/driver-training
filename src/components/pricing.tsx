@@ -16,11 +16,7 @@ export function SectionPricing({
 }: CardsProps) {
   return (
     <Section backgroundMuted={backgroundMuted}>
-      <SectionHeader
-        heading={title}
-        text={subTitle}
-        // links={links}
-      />
+      <SectionHeader heading={title} text={subTitle} />
       <div className="container px-6 mx-auto">
         {items?.length && (
           <div className="grid justify-center gap-20 pt-20 lg:grid-cols-3">
