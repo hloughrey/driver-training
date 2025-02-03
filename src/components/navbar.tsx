@@ -58,6 +58,7 @@ function MenuLink({ link }: { link: any }) {
   return (
     <li>
       <Link
+        rel="canonical"
         href={link.url}
         className={classNames(
           "py-4 hover:underline text-sm md:text-base",
