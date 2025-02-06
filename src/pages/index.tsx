@@ -33,7 +33,7 @@ export default function index({ attributes, contactDetails }) {
       <Meta title={attributes.pageMeta.title} />
       <SectionHero
         {...attributes.hero}
-        phoneNumber={contactDetails.phoneNumber}
+        phoneNumber={contactDetails.telephone}
       />
       <SectionCards {...attributes.cards} />
       {attributes.features.items.map((item, idx) => (

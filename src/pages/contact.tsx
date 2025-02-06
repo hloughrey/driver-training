@@ -31,7 +31,7 @@ export default function Contact({ attributes, contactDetails }) {
       <Meta title={attributes.pageMeta.title} />
       <SectionHero
         {...attributes.hero}
-        phoneNumber={contactDetails.phoneNumber}
+        phoneNumber={contactDetails.telephone}
       />
       <ContactForm {...attributes.contact} />
     </>

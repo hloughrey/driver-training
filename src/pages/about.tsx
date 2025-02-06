@@ -31,7 +31,7 @@ export default function About({ attributes, contactDetails }) {
       <Meta title={attributes.pageMeta.title} />
       <SectionHero
         {...attributes.hero}
-        phoneNumber={contactDetails.phoneNumber}
+        phoneNumber={contactDetails.telephone}
       />
       <SectionAbout content={attributes.content} />
     </>
