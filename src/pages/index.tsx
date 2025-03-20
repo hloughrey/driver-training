@@ -44,7 +44,6 @@ export default function index({ attributes, contactDetails }) {
           backgroundMuted={idx % 2 !== 0}
         />
       ))}
-
       <SectionPricing {...attributes.pricing} />
     </>
   );

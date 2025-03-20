@@ -132,15 +132,21 @@ collections:
               - label: Title
                 name: title
                 widget: string
-              - label: Content
+              - label: SubTitle
+                name: subTitle
+                widget: string
+              - label: Items
                 name: items
                 widget: list
+                min: 3
+                max: 3
                 fields:
-                  - label: FAQ
-                    name: faq
-                    widget: markdown
-                    modes:
-                      - rich_text
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: SubTitle
+                    name: subTitle
+                    widget: string
 
       - label: About
         name: about
