@@ -1,2 +1,14 @@
+# www.robotstxt.org
+
 User-agent: *
 Allow: /
+
+# Disallow admin and development paths
+Disallow: /admin/
+Disallow: /_next/static/
+
+# Sitemap location
+Sitemap: https://www.c1drivertraining.com/sitemap.xml
+
+# Crawl delay suggestion
+Crawl-delay: 10

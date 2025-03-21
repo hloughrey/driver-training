@@ -1,3 +1,30 @@
 
+[build]
+  command = "npm run build && node ./scripts/generate-sitemap.js"
+  publish = "dist"
+  
+[build.environment]
+  NODE_VERSION = "22.13.1"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.images]
+  compress = true
+
 [[plugins]]
   package = "@netlify/plugin-emails"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
