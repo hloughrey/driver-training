@@ -19,12 +19,28 @@ const nextConfig: NextConfig = {
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,
-  webpack: (cfg) => {
+  webpack: (cfg, { isServer }) => {
+    // Handle markdown files
     cfg.module.rules.push({
       test: /\.md$/,
       loader: "frontmatter-markdown-loader",
       // options: { mode: ["react-component"] },
     });
+
+    // Handle previews compilation
+    if (!isServer) {
+      // Add entry for previews if needed
+      // This is a fallback in case the separate build script doesn't work
+      cfg.resolve = {
+        ...cfg.resolve,
+        fallback: {
+          ...cfg.resolve?.fallback,
+          fs: false,
+          path: false,
+        },
+      };
+    }
+    
     return cfg;
   },
 };

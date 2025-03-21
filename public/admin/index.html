@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Add Tailwind CSS for previews -->
+    <link href="/globals.css" rel="stylesheet" />
+    <link href="/admin/preview-styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
@@ -13,7 +16,10 @@
       CMS.registerPreviewStyle(
         "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
       );
-      CMS.registerPreviewStyle("/styles/content.module.css");
+      CMS.registerPreviewStyle("/globals.css");
+      CMS.registerPreviewStyle("/admin/preview-styles.css");
     </script>
+    <!-- Load our preview components -->
+    <script src="/admin/previews.js"></script>
   </body>
 </html>
