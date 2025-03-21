@@ -1,40 +1,17 @@
 import { SectionCards } from "../components/cards";
-import { SectionHero } from "../components/hero";
 import { SectionFeature } from "../components/feature";
 import { SectionPricing } from "../components/pricing";
-import { Meta } from "../components/meta";
+import { PageLayout } from "../components/common/page-layout";
+import { getPageData } from "../lib/data-fetching";
+import { PageProps } from "../types";
 
-type HomePageProps = {
-  props: {
-    attributes: any;
-    contactDetails: {
-      telephone: number;
-      email: string;
-    };
-    html?: any;
-  };
-};
-
-export async function getStaticProps(): Promise<HomePageProps> {
-  const {
-    default: { attributes, html },
-  }: any = await import("@content/pages/home.md");
-
-  const {
-    default: { attributes: contactDetails },
-  }: any = await import("@content/settings/contact.md");
-
-  return { props: { attributes, contactDetails, html } };
+export async function getStaticProps() {
+  return getPageData("home");
 }
 
-export default function index({ attributes, contactDetails }) {
+export default function Index({ attributes, contactDetails }: PageProps) {
   return (
-    <>
-      <Meta title={attributes.pageMeta.title} />
-      <SectionHero
-        {...attributes.hero}
-        phoneNumber={contactDetails.telephone}
-      />
+    <PageLayout attributes={attributes} contactDetails={contactDetails}>
       <SectionCards {...attributes.cards} />
       {attributes.features.items.map((item, idx) => (
         <SectionFeature
@@ -45,6 +22,6 @@ export default function index({ attributes, contactDetails }) {
         />
       ))}
       <SectionPricing {...attributes.pricing} />
-    </>
+    </PageLayout>
   );
 }

@@ -1,37 +1,15 @@
-import { Meta } from "../components/meta";
-import { SectionHero } from "../components/hero";
 import { SectionInstructors } from "../components/instructors";
+import { PageLayout } from "../components/common/page-layout";
+import { getPageData } from "../lib/data-fetching";
+import { PageProps } from "../types";
 
-type TeamProps = {
-  props: {
-    attributes: any;
-    contactDetails: {
-      telephone: number;
-      email: string;
-    };
-    html?: any;
-  };
-};
-
-export async function getStaticProps(): Promise<TeamProps> {
-  const {
-    default: { attributes, html },
-  }: any = await import("@content/pages/instructors.md");
-  const {
-    default: { attributes: contactDetails },
-  }: any = await import("@content/settings/contact.md");
-
-  return { props: { attributes, contactDetails, html } };
+export async function getStaticProps() {
+  return getPageData("instructors");
 }
 
-export default function Instructors({ attributes, contactDetails }) {
+export default function Instructors({ attributes, contactDetails }: PageProps) {
   return (
-    <>
-      <Meta title={attributes.pageMeta.title} />
-      <SectionHero
-        {...attributes.hero}
-        phoneNumber={contactDetails.telephone}
-      />
+    <PageLayout attributes={attributes} contactDetails={contactDetails}>
       {attributes.team.instructors.map((instructor, idx) => (
         <SectionInstructors
           key={instructor.name.concat("-")}
@@ -40,6 +18,6 @@ export default function Instructors({ attributes, contactDetails }) {
           backgroundMuted={idx % 2 !== 0}
         />
       ))}
-    </>
+    </PageLayout>
   );
 }
