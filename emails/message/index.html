@@ -1,21 +1,89 @@
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Contact Form Message</title>
+  </head>
   <body
     style="
-      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;
       margin: 0 auto;
+      max-width: 600px;
+      padding: 20px;
+      color: #333;
+      line-height: 1.5;
     "
   >
-    <h1>New message from website</h1>
+    <div
+      style="
+        background-color: #f0f4f8;
+        padding: 20px;
+        border-radius: 5px;
+        border-left: 5px solid #3b82f6;
+      "
+    >
+      <h1 style="color: #1e40af; margin-top: 0">New message from website</h1>
 
-    <div>
-      <dt>Message from:</dt>
-      <dd>{{name}}</dd>
-      <dt>{{name}}'s Email:</dt>
-      <dd>{{email}}</dd>
-      <dt>{{name}}'s Phone Number:</dt>
-      <dd>{{phoneNo}}</dd>
-      <dt>Message</dt>
-      <dd>{{message}}</dd>
+      <div
+        style="
+          background-color: white;
+          padding: 20px;
+          border-radius: 5px;
+          margin-top: 20px;
+        "
+      >
+        <div style="margin-bottom: 15px">
+          <dt style="font-weight: bold; color: #4b5563">Message from:</dt>
+          <dd style="margin-left: 0; margin-bottom: 10px">{{name}}</dd>
+
+          <dt style="font-weight: bold; color: #4b5563">Email:</dt>
+          <dd style="margin-left: 0; margin-bottom: 10px">
+            <a
+              href="mailto:{{email}}"
+              style="color: #2563eb; text-decoration: none"
+              >{{email}}</a
+            >
+          </dd>
+
+          <dt style="font-weight: bold; color: #4b5563">Phone Number:</dt>
+          <dd style="margin-left: 0; margin-bottom: 10px">
+            <a
+              href="tel:{{phoneNo}}"
+              style="color: #2563eb; text-decoration: none"
+              >{{phoneNo}}</a
+            >
+          </dd>
+
+          <dt style="font-weight: bold; color: #4b5563">
+            Preferred Contact Method:
+          </dt>
+          <dd style="margin-left: 0; margin-bottom: 10px">
+            {{preferredContact}}
+          </dd>
+
+          <dt style="font-weight: bold; color: #4b5563">Message:</dt>
+          <dd
+            style="margin-left: 0; margin-bottom: 10px; white-space: pre-wrap"
+          >
+            {{message}}
+          </dd>
+        </div>
+      </div>
+
+      <div
+        style="
+          margin-top: 20px;
+          font-size: 14px;
+          color: #6b7280;
+          text-align: center;
+        "
+      >
+        <p>
+          This message was sent from the C1 Driver Training website contact
+          form.
+        </p>
+      </div>
     </div>
   </body>
 </html>

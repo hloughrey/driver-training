@@ -14,6 +14,7 @@ const handler: Handler = async function (event) {
     email: string;
     phoneNo: string;
     message: string;
+    preferredContact?: string;
   };
 
   try {
@@ -31,6 +32,7 @@ const handler: Handler = async function (event) {
           email: requestBody.email,
           phoneNo: requestBody.phoneNo,
           message: requestBody.message,
+          preferredContact: requestBody.preferredContact || "No preference",
         },
       }),
     });
