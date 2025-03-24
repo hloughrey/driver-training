@@ -18,15 +18,21 @@ export function MediaSection({
   imageWidth = 500,
   imageHeight = 300,
   imageClassName = "rounded-lg drop-shadow-lg",
+  ...rest
 }: MediaSectionProps & {
   children?: React.ReactNode;
   containerClassName?: string;
   imageWidth?: number;
   imageHeight?: number;
   imageClassName?: string;
+  [key: string]: any; // Allow additional HTML attributes
 }) {
   return (
-    <Section data-cy="node-media-section" backgroundMuted={backgroundMuted}>
+    <Section
+      data-cy="node-media-section"
+      backgroundMuted={backgroundMuted}
+      {...rest}
+    >
       <div className={`container px-6 mx-auto ${containerClassName}`.trim()}>
         <div className="grid items-center gap-8 md:grid-flow-col-dense md:grid-cols-2 md:gap-12">
           {media?.image && (

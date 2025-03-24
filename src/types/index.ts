@@ -9,6 +9,7 @@ export interface Media {
 // Common page metadata
 export interface PageMeta {
   title: string;
+  description?: string;
 }
 
 // Contact details type

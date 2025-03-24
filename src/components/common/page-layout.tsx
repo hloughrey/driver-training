@@ -15,9 +15,19 @@ export function PageLayout({
   contactDetails,
   children,
 }: PageLayoutProps) {
+  // Get page-specific meta description if available
+  const metaDescription = attributes.pageMeta.description || undefined;
+
+  // Use hero image as OG image if available
+  const ogImage = attributes.hero?.media?.image || undefined;
+
   return (
     <>
-      <Meta title={attributes.pageMeta.title} />
+      <Meta
+        title={attributes.pageMeta.title}
+        description={metaDescription}
+        ogImage={ogImage}
+      />
       <SectionHero
         {...attributes.hero}
         phoneNumber={contactDetails.telephone}
