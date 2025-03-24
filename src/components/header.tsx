@@ -24,7 +24,7 @@ export function SectionHeader({
         </HeadingLevel>
       )}
       {text && (
-        <p className="max-w-3xl mx-auto mt-4 text-xl text-gray-600">{text}</p>
+        <p className="max-w-3xl mx-auto mt-4 text-xl text-gray-800">{text}</p>
       )}
       {links?.length ? <Links links={links} /> : null}
     </div>

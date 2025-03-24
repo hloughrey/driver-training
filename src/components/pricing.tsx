@@ -11,7 +11,7 @@ type CardsProps = {
 // Helper component for the checkmark icon
 const CheckmarkIcon = () => (
   <svg
-    className="w-5 h-5 text-rose-700 mr-2 mt-0.5 flex-shrink-0"
+    className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"

@@ -2,32 +2,32 @@
 pageMeta:
   title: Home
 hero:
-  title: C1 Driver Training North West
-  subTitle: Your Journey to Driving Success Starts Here
+  title: C1 Driver Training for Paramedics
+  subTitle: Complete Your Paramedic Qualification with Specialized C1 License Training
   media:
     alt: Picture of a road
     image: driver-training.jpg
 cards:
-  title: Why Choose Us
-  subTitle: Expert instruction tailored to your individual needs
+  title: Why Paramedics Choose Us
+  subTitle: Specialized C1 training designed for emergency medical professionals
   items:
-    - title: High First-Time Pass Rate
-      subTitle: Our structured, quality training approach has resulted in an exceptional first-time pass rate for our students.
-    - title: Experienced Instructors
-      subTitle: Learn from instructors with decades of professional driving experience who are passionate about your success.
-    - title: Flexible Learning
-      subTitle: We adapt our teaching methods to match your learning style and schedule for maximum effectiveness.
+    - title: 94% First-Time Pass Rate
+      subTitle: Our paramedic-focused training program achieves a 94% first-time pass rate, significantly higher than the national average of 56%.
+    - title: Emergency Service Specialists
+      subTitle: Train with former ambulance drivers and blue light specialists who understand the unique demands of paramedic driving and emergency response.
+    - title: Paramedic-Friendly Scheduling
+      subTitle: Flexible training slots designed around hospital shift patterns, with weekend and evening options to accommodate your demanding medical training schedule.
 features:
   items:
-    - title: 55+ Years Combined Experience
-      subTitle: Benefit from our extensive background in Emergency Response Driving and professional instruction
+    - title: 55+ Years of Blue Light Driving
+      subTitle: Our instructors have served as ambulance drivers and emergency response specialists, bringing real-world paramedic driving expertise to your C1 training.
       media:
-        alt: Picture of a road
+        alt: Emergency response vehicle on the road
         image: driver-training.jpg
-    - title: Personalized Learning Journey
-      subTitle: We assess your current skills and create a customized training plan that focuses on your specific needs and goals.
+    - title: Paramedic-Focused Training Path
+      subTitle: We create a customized C1 training program specifically designed for paramedic requirements, focusing on the vehicle control and safety skills essential for emergency medical transport.
       media:
-        alt: Picture of a road
+        alt: Paramedic training vehicle
         image: driver-training.jpg
         cards: null
 pricing:

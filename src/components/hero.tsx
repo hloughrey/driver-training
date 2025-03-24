@@ -40,7 +40,7 @@ export function SectionHero({
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <Link
               href={`tel:${phoneNumber}`}
-              className="md:w-[12rem] inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 dark:focus:ring-rose-900"
+              className="md:w-[12rem] inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               <svg
                 className="max-w-[1.5rem] mr-4"
