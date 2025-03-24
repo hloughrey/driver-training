@@ -2,6 +2,7 @@ import React from "react";
 import { PageProps } from "../../types";
 import { Meta } from "../meta";
 import { SectionHero } from "../hero";
+import { Breadcrumb } from "../breadcrumb";
 
 interface PageLayoutProps extends PageProps {
   children?: React.ReactNode;
@@ -32,6 +33,9 @@ export function PageLayout({
         {...attributes.hero}
         phoneNumber={contactDetails.telephone}
       />
+      <div className="container px-6 mx-auto">
+        <Breadcrumb title={attributes.pageMeta.title} />
+      </div>
       {children}
     </>
   );
