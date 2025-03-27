@@ -11,7 +11,7 @@ content: >-
   # Specialised C1 Training for Professionals
 
 
-  C1 Driver Training North West is the region's premier training provider dedicated to helping trainee paramedics acquire their C1 category license—a critical qualification for emergency medical professionals. With over 55 years of combined blue light driving experience, our specialised program is designed specifically for your career journey.
+  C1 Driver Training North West is the region's premier training provider dedicated to helping paramedics acquire their C1 category license—a critical qualification for emergency medical professionals. With over 55 years of combined blue light driving experience, our specialised program is designed specifically for your career journey.
 
 
   ## Why Choose Us
@@ -20,13 +20,9 @@ content: >-
   We understand that for trainee paramedics, obtaining your C1 license isn't just another qualification—it's an essential step in your career progression and a critical skill for emergency response. Our program is specifically tailored to prepare you for the unique challenges of ambulance driving:
 
 
-
-
   * **Confidence Under Pressure**: Develop skills to drive safely while transporting passengers
 
   * **Career Advancement**: Complete this crucial requirement for your chosen career path
-
-
 
 
   ## Our Training Approach
