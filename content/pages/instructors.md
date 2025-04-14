@@ -7,7 +7,8 @@ pageMeta:
     operation.
 hero:
   title: Meet Our Training Specialists
-  subTitle: Learn from former emergency response professionals with over 18 years
+  subTitle:
+    Learn from former emergency response professionals with over 18 years
     of experience
   media:
     alt: "Professional C1 driver training  "
@@ -17,7 +18,7 @@ team:
     - name: Jayne Cumisky
       media:
         alt: "Jayne Cumisky, C1 Driving Instructor "
-        image: jayne.jpg
+        image: /images/jayne.jpg
       specialization: Ambulance & Emergency Vehicle Specialist
       experience: 18
       bio: Jayne brings her extensive 18 years of experience from the ambulance
@@ -29,16 +30,19 @@ team:
         standards.
       qualifications:
         - qualification: ADI (Approved Driving Instructor) - DVSA Certified
-        - qualification: Defensive driving coach with 15+ years of Emergency Response
+        - qualification:
+            Defensive driving coach with 15+ years of Emergency Response
             Driving experience
     - name: Neil Harrison
       media:
-        alt: Neil Harrison, C1 Technical Skills Specialist with 35 years of emergency
+        alt:
+          Neil Harrison, C1 Technical Skills Specialist with 35 years of emergency
           services experience
-        image: neil.png
+        image: /images/neil.png
       specialization: C1 Technical Skills & Maneuvers Specialist
       experience: 22
-      bio: Neil's technical expertise and patient teaching style have helped hundreds
+      bio:
+        Neil's technical expertise and patient teaching style have helped hundreds
         of paramedic trainees successfully obtain their C1 license with a
         first-time pass rate of over 90%. With 22 years in emergency services,
         he specializes in helping students master the challenging technical
@@ -47,7 +51,8 @@ team:
         conditions.
       qualifications:
         - qualification: ADI (Approved Driving Instructor) - DVSA Certified
-        - qualification: Defensive Driving coach with 20+ years of Emergency Response
+        - qualification:
+            Defensive Driving coach with 20+ years of Emergency Response
             Driving experience
         - qualification: Former Emergency Services Driver Trainer and Safety Consultant
 ---

@@ -8,14 +8,8 @@ backend:
   uploadMedia: Upload "{{path}}"
   deleteMedia: Delete "{{path}}"
   openAuthoring: "{{message}}"
-media_folder: pubic/imgs
-
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: latitude55
-    api_key: 193432239978812
-    output_filename_only: true
+media_folder: public/images
+public_folder: /images
 
 collections:
   - name: site_settings

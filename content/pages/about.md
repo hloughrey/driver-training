@@ -6,7 +6,7 @@ hero:
   subTitle: Specialised training from professionals
   media:
     alt: Picture of a road
-    image: driver-training.jpg
+    image: /images/driver-training.jpg
 content: >-
   # Specialised C1 Training for Professionals
 
