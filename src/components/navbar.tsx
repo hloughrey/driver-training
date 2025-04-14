@@ -25,10 +25,11 @@ export function Navbar({ links, ...props }: NavbarProps) {
           passHref
         >
           <Image
-            src="Logo.svg"
+            src="/images/Logo.svg"
             alt="C1 Driver Training logo"
             width={200}
             height={24}
+            style={{ height: "auto" }}
             priority
           />
         </Link>

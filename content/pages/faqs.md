@@ -7,7 +7,7 @@ hero:
   subTitle: Everything you need to know about C1 driver training and testing
   media:
     alt: Picture of a road
-    image: driver-training.jpg
+    image: /images/driver-training.jpg
 faqs:
   - category: "Test Components"
     items:

@@ -47,6 +47,8 @@ export function MediaSection({
                 width={imageWidth}
                 height={imageHeight}
                 className={imageClassName}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority={media.image.includes("driver-training.jpg")}
               />
             </div>
           )}
