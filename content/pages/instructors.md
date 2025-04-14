@@ -12,7 +12,7 @@ hero:
     of experience
   media:
     alt: "Professional C1 driver training  "
-    image: driver-training.jpg
+    image: /images/driver-training.jpg
 team:
   instructors:
     - name: Jayne Cumisky
