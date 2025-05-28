@@ -31,7 +31,7 @@ export function Meta({ title, description, ogImage }: MetaProps) {
       <link
         key="canonical_link"
         rel="canonical"
-        href={`${process.env.NEXT_PUBLIC_BASE_URL}${currentPath}`}
+        href={`${process.env.NEXT_PUBLIC_BASE_URL}${currentPath ? currentPath : ""}`}
       />
       <>
         <title>{pageTitle}</title>
