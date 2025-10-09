@@ -1,6 +1,7 @@
 ---
 pageMeta:
   title: About
+  description: C1 Driver Training North West provides specialised C1 license training for paramedics and emergency medical professionals. Expert instructors with 55+ years of blue light driving experience and a 94% first-time pass rate.
 hero:
   title: About Our C1 Training
   subTitle: Specialised training from professionals
