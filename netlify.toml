@@ -1,7 +1,7 @@
 
 [build]
   command = "npm run build && node ./scripts/generate-sitemap.js"
-  publish = "dist"
+  publish = ".next"
   
 [build.environment]
   NODE_VERSION = "22.13.1"

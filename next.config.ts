@@ -3,7 +3,6 @@ import "dotenv/config";
 
 const nextConfig: NextConfig = {
   // output: "export",
-  distDir: "dist",
   images: {
     unoptimized: false, // Enable Next.js image optimization
   },
