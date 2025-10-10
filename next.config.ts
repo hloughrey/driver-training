@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 import "dotenv/config";
 
 const nextConfig: NextConfig = {
-  // output: "export",
+  output: "export",
+  distDir: "dist",
   images: {
-    unoptimized: false, // Enable Next.js image optimization
+    unoptimized: true, // Required for static export
   },
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   reactStrictMode: true,
