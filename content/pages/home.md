@@ -3,7 +3,8 @@ pageMeta:
   title: Home
 hero:
   title: "C1 Driver Training "
-  subTitle: Complete Your career journey with Specialised C1 License Training
+  subTitle: Complete Your career journey with Specialised C1 License Training, now
+    offering training to learner drivers.
   media:
     alt: Picture of a road
     image: /images/driver-training.jpg
