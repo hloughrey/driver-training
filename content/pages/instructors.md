@@ -7,8 +7,7 @@ pageMeta:
     operation.
 hero:
   title: Meet Our Training Specialists
-  subTitle:
-    Learn from former emergency response professionals with over 18 years
+  subTitle: Learn from former emergency response professionals with over 18 years
     of experience
   media:
     alt: "Professional C1 driver training  "
@@ -30,19 +29,18 @@ team:
         standards.
       qualifications:
         - qualification: ADI (Approved Driving Instructor) - DVSA Certified
-        - qualification:
-            Defensive driving coach with 15+ years of Emergency Response
+        - qualification: Defensive driving coach with 15+ years of Emergency Response
             Driving experience
+        - qualification: "CET "
+        - qualification: CAVA
     - name: Neil Harrison
       media:
-        alt:
-          Neil Harrison, C1 Technical Skills Specialist with 35 years of emergency
+        alt: Neil Harrison, C1 Technical Skills Specialist with 35 years of emergency
           services experience
         image: /images/neil.png
       specialization: C1 Technical Skills & Maneuvers Specialist
       experience: 22
-      bio:
-        Neil's technical expertise and patient teaching style have helped hundreds
+      bio: Neil's technical expertise and patient teaching style have helped hundreds
         of paramedic trainees successfully obtain their C1 license with a
         first-time pass rate of over 90%. With 22 years in emergency services,
         he specializes in helping students master the challenging technical
@@ -51,8 +49,9 @@ team:
         conditions.
       qualifications:
         - qualification: ADI (Approved Driving Instructor) - DVSA Certified
-        - qualification:
-            Defensive Driving coach with 20+ years of Emergency Response
+        - qualification: Defensive Driving coach with 20+ years of Emergency Response
             Driving experience
         - qualification: Former Emergency Services Driver Trainer and Safety Consultant
+        - qualification: CET
+        - qualification: CAVA
 ---
