@@ -10,7 +10,7 @@ hero:
     image: /images/driver-training.jpg
 cards:
   title: Why Choose Us
-  subTitle: "Specialists in C1 driver training also learner drivers more than welcome "
+  subTitle: Specialists in C1 driver training also teaching learner drivers.
   items:
     - title: Very high first-Time Pass Rates
       subTitle: Our focused training program achieves a very high first-time pass
