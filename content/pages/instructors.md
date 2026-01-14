@@ -7,7 +7,7 @@ pageMeta:
     operation.
 hero:
   title: Meet Our Training Specialists
-  subTitle: Learn from former emergency response professionals with over 18 years
+  subTitle: Learn from former emergency response professionals with over 24 years
     of experience
   media:
     alt: "Professional C1 driver training  "
