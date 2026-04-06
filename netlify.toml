@@ -25,3 +25,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-emails"
+
+[[redirects]]
+  from = "/*"
+  to = "https://drivertrainingnorthwest.co.uk/:splat"
+  status = 302
+  force = true
